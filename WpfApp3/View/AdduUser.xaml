@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp3.View.AdduUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3.View"
+        mc:Ignorable="d" Height="450" Width="800" Title="Принять нового абитуриента" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="282" Margin="178,78,0,0" VerticalAlignment="Top" Width="505">
+            <Label Content="Название предмета :" HorizontalAlignment="Left" Margin="42,37,0,0" VerticalAlignment="Top" Width="140"/>
+            <TextBox x:Name="tbxName" HorizontalAlignment="Left" Height="23" Margin="170,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="tbxSurnameNP" HorizontalAlignment="Left" Height="23" Margin="170,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Паспортные данные :" HorizontalAlignment="Left" Margin="30,97,0,0" VerticalAlignment="Top" Width="140"/>
+            <TextBox x:Name="tbxPassport" HorizontalAlignment="Left" Height="23" Margin="170,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Дата экзамена :" HorizontalAlignment="Left" Margin="42,128,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbxDate" HorizontalAlignment="Left" Height="23" Margin="170,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="tbxRating" HorizontalAlignment="Left" Height="23" Margin="144,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="BtSave" Content="Сохранить" HorizontalAlignment="Left" Margin="285,249,0,0" VerticalAlignment="Top" Width="197" Click="BtSaveClick"/>
+        </Grid>
+        <Label Content="ФИО абитуриента :" HorizontalAlignment="Left" Margin="220,146,0,0" VerticalAlignment="Top"/>
+        <Label Content="Оценка за экзамен :" HorizontalAlignment="Left" Margin="191,323,0,0" VerticalAlignment="Top" Width="144"/>
+
+    </Grid>
+</Window>
